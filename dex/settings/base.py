@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "prosumer.apps.ProsumerConfig",
     "users.apps.UsersConfig",
     "openapi.apps.OpenAPIConfig",
+    "utils.apps.UtilsConfig",
     "drf_yasg",
     "rest_framework_simplejwt",
 ]
