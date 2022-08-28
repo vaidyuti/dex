@@ -86,7 +86,7 @@ Tasks are defined in `tasks.py` in the appropriate app module.
 
 To run the worker, in the project root, run:
 
-        celery -A project worker
+        celery -A dex worker
 
 Logging from the tasks will be shown/hidden based on the celery worker
 log level (default is `WARNING`, can be changed with `-l LEVEL` worker
@@ -94,12 +94,12 @@ option), not based on Django logging configuration.
 
 To show `INFO` or higher-priority messages, use:
 
-        celery -A project worker -l INFO
+        celery -A dex worker -l INFO
 
 To run periodic tasks using Celery Beat, specify beat entries
 in `settings/base.py` and run celery beat:
 
-        celery -A project beat -l INFO
+        celery -A dex beat -l INFO
 
 ## Docker support
 

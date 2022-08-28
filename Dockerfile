@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 COPY . /usr/src/app/
 
 RUN python manage.py collectstatic --noinput
-CMD gunicorn --worker-tmp-dir /dev/shm -w 2 --log-file=- -b :8000 project.wsgi:application
+CMD gunicorn --worker-tmp-dir /dev/shm -w 2 --log-file=- -b :8000 dex.wsgi:application
