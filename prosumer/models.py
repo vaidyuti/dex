@@ -1,7 +1,8 @@
 from django.db import models
+from utils.models import BaseModel
 
 
-class Prosumer(models.Model):
+class Prosumer(BaseModel, models.Model):
     """
     Model of a peer in a vaidyuti based network.
     """

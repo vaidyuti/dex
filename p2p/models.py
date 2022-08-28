@@ -1,7 +1,8 @@
 from django.db import models
+from utils.models import BaseModel
 
 
-class Buy(models.Model):
+class Buy(BaseModel, models.Model):
     """
     Peer-to-peer buy transaction
     """
@@ -52,7 +53,7 @@ class Buy(models.Model):
     )
 
 
-class Sell(models.Model):
+class Sell(BaseModel, models.Model):
     """
     Peer-to-peer sell transaction.
     """
@@ -112,7 +113,7 @@ class Sell(models.Model):
     )
 
 
-class Trade(models.Model):
+class Trade(BaseModel, models.Model):
     """
     An atomic trade between two peers belonging to the Vaidyuti P2P network.
     """
