@@ -24,8 +24,8 @@ schema_view = get_schema_view(
 
 router = routers.DefaultRouter()
 router.register(r"prosumer/prosumers", ProsumerViewSet)
-router.register(r"p2p/buies", BuyViewSet)
-router.register(r"p2p/sells", SellViewSet)
+router.register(r"p2p/buys", BuyViewSet)
+router.register(r"p2p/sell", SellViewSet)
 router.register(r"p2p/trades", TradeViewSet)
 router.register(r"users/users", UserViewSet)
 
